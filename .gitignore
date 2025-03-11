@@ -1,0 +1,183 @@
+# ============================
+# General Python Ignored Files
+# ============================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+/.cursor/
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment (venv)
+venv/
+.env/
+.venv/
+
+# Pipenv
+Pipfile
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# Pyenv
+.python-version
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Django-related
+*.log
+db.sqlite3
+instance/
+media/
+
+# Flask-related
+instance/
+*.log
+
+# ============================
+# Version Control Specific
+# ============================
+
+# Local Git config and files
+.git/
+*.swp
+*.swo
+*.swn
+
+# ============================
+# Editor / IDE Specific
+# ============================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains (PyCharm, IntelliJ)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Emacs
+*~ 
+\#*\#
+.\#*
+
+# Vim
+*.swp
+*.swo
+*.un~
+
+# ============================
+# Logs and Debugging Files
+# ============================
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+*.trace
+
+# Profiling data
+*.prof
+*.lprof
+
+# Coverage reports
+.coverage
+.coverage.*
+htmlcov/
+cov.xml
+
+# MyPy type checking
+.mypy_cache/
+
+# Pytest / Testing
+.pytest_cache/
+
+# ============================
+# Dependency Management
+# ============================
+
+# Cache directories
+__pypackages__/
+pip-wheel-metadata/
+*.pyc
+*.pyo
+
+# Local dependency overrides
+site-packages/
+
+# ============================
+# OS-Specific Files
+# ============================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+# ============================
+# Containers / Cloud
+# ============================
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+Dockerfile
+
+# Kubernetes
+k8s/
+helm/
+
+# AWS / Cloud
+*.tfstate
+.terraform/
+.cloud/
+
+# ============================
+# Security / Credentials
+# ============================
+
+# Environment variables / Secrets
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.der
+
+# ============================
+# Custom Project-Specific
+# ============================
+
+# Ignore any local overrides
+local_settings.py
+secrets.json
