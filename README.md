@@ -11,23 +11,16 @@ Phinity enables structured prompt evolution with multiple built-in strategies:
 - Concretizing – Adds concrete examples or scenarios.
 - Reasoning – Enhances reasoning or step-by-step explanations.
 - Comparative – Transforms prompts to include comparative elements.
-💡 Users can add custom evolution strategies, define domain-specific constraints, and integrate supporting documents for more controlled instruction generation.
 
-**Instruction Verification and Repair** 
-- Phinity includes robust document verification to ensure evolved instructions remain answerable and relevant to provided sources.
+Users can add custom evolution strategies, define domain-specific constraints, and integrate supporting documents for more controlled instruction generation.
 
-**Instruction Repair Pipeline**
-- Detects and corrects instructions that drift from document context (`_repair_instruction` and `_simplify_instruction`)
+**Document/Knowledge Base Support** 
+- Instruction Verification and Repair: Phinity includes robust document verification to ensure evolved instructions remain answerable and relevant to provided sources. There is an instruction repair pipeline that detects and corrects instructions that drift from document context (`_repair_instruction` and `_simplify_instruction`) which supports both strict and partial answerability checks and integration with vector databases such as ChromaDB.
 
-**Answerability Verification**
-- Ensures instructions remain answerable using `_verify_answerability`
-- Supports both strict and partial answerability checks.
+**RAG Benchmark Generation**
+Phinity also supports creating multi-hop RAG benchmarks by constructing knowledge graphs from documents and generating synthetic QA pairs. 
+
+# Documentation and Roadmap:
+  https://phinity.gitbook.io/phinity/use-cases/in-domain-sft
+
   
-**Document Relevance**
-- Retrieves the most relevant sections of documents for each instruction.
-- Uses vector similarity to fetch supporting context
-- Supports integration with vector databases such as ChromaDB
-**Domain-Aware Evolution**
-- Incorporates domain context into the evolution process.
-- Produces field-specific transformations to ensure data relevance.
-- Supports multi-document grounding
