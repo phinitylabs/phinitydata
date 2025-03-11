@@ -14,8 +14,8 @@ Phinity enables structured prompt evolution with multiple built-in strategies:
 - Comparative – Transforms prompts to include comparative elements.
 💡 Users can add custom evolution strategies, define domain-specific constraints, and integrate supporting documents for more controlled instruction generation.
 
-**Instruction Verification and Repair**
-Phinity includes robust document verification to ensure evolved instructions remain answerable and relevant to provided sources.
+**Instruction Verification and Repair** 
+- Phinity includes robust document verification to ensure evolved instructions remain answerable and relevant to provided sources.
 
 **Instruction Repair Pipeline**
 - Detects and corrects instructions that drift from document context (`_repair_instruction` and `_simplify_instruction`)
