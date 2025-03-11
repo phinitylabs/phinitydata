@@ -1,7 +1,9 @@
 # Phinity
 Phinity is a synthetic data generation SDK designed to create high-quality, verifiable datasets for LLM development and evaluation.
 
-Phinity builds upon Evol-Instruct, an instruction evolution method used by frontier AI labs to generate code SFT (supervised fine-tuning) datasets for LLMs. We extend this approach to support custom domain-specific dataset generation, ensuring high-quality data that aligns with your rules and context.
+One of the most difficult aspects of synthetic data generation at scale is diversity. Instruction generation methods like WizardLM Evol-Instruct have been developed to enable diverse instruction generation at scale - to do this, they continuously create new prompts from a seed set of prompts that the user provides by "evolving" them in the domain. Think of a never-ending family tree: prompts give birth to new prompts with various added mutations through generations. Now you have 1000000s of new family members from a starting set of a couple of seed family members. Evol-Instruct is used by frontier AI labs to generate code SFT (supervised fine-tuning) datasets for LLMs. 
+
+We extend this approach to support custom domain-specific dataset generation, ensuring high-quality data that aligns with your rules and context.
 
 # 🎯 Key Features
 **Instruction Evolution Framework**
