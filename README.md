@@ -24,6 +24,7 @@ Users can add custom evolution strategies, define domain-specific constraints, a
 Phinity also supports creating multi-hop RAG benchmarks by constructing knowledge graphs from documents and generating synthetic QA pairs.
 
 ## Quick Start
+Please visit these [docs](https://phinity.gitbook.io/phinity), they're much prettier than the instructions below! 
 
 ### Installation
 
