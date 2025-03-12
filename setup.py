@@ -1,3 +1,6 @@
+"""
+Setup file for phinitydata package
+"""
 from setuptools import setup, find_packages
 
 # Read the contents of README file
@@ -27,12 +30,16 @@ setup(
     python_requires=">=3.8",
     install_requires=[
         "openai>=1.0.0",
+        "langchain",
+        "faiss-cpu",  # or faiss-gpu if needed
         "chromadb>=0.3.0",
+        "tiktoken",
         "tqdm>=4.65.0",
         "numpy>=1.24.0",
         "pandas>=1.5.0",
         "transformers>=4.30.0",
         "torch>=2.0.0",
+        "ragas>=0.0.20",
     ],
     extras_require={
         "dev": [

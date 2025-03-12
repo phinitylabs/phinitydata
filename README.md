@@ -130,7 +130,7 @@ grounded_results = generator.generate_evolved_instructions(
 ## Documentation and Roadmap
 
 For comprehensive documentation, visit:
-[https://phinity.gitbook.io/phinity/use-cases/in-domain-sft](https://phinity.gitbook.io/phinity/use-cases/in-domain-sft)
+[https://phinity.gitbook.io/phinity](https://phinity.gitbook.io/phinity)
 
 
 
