@@ -1,4 +1,4 @@
-# Phinity
+# Phinity - Custom Domain-Specific Synthetic Data Generation for LLMs
 
 Phinity is a synthetic data generation SDK designed to create high-quality, verifiable datasets for LLM development and evaluation.
 
