@@ -15,8 +15,8 @@ setup(
     description="A package for generating synthetic data for LLMs",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/phinitydata",
-    packages=find_packages(),
+    url="https://github.com/phinitylabs/phinitydata.git",
+    packages=find_packages(include=['phinitydata', 'phinitydata.*']),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
