@@ -17,8 +17,6 @@ __pycache__/
 venv/
 .env/
 .venv/
-test_env/
-
 
 # Pipenv
 Pipfile

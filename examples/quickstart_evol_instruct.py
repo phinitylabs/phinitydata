@@ -4,8 +4,12 @@ Shows basic usage of SFTGenerator without document grounding.
 """
 
 from phinitydata.testset.sft_generator import SFTGenerator
+import os
 
 def quickstart_example():
+    # Create output directory
+    os.makedirs("examples/generated_data", exist_ok=True)
+    
     # Initialize generator
     generator = SFTGenerator()
     
@@ -27,7 +31,7 @@ def quickstart_example():
         },
         verbose=True,
         export_format="jsonl",
-        export_path="generated_data/quickstart_instructions.jsonl"
+        export_path="examples/generated_data/quickstart_instructions.jsonl"
     )
     
     # Print results
