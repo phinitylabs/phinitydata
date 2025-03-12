@@ -1,5 +1,8 @@
 """
 Setup file for phinitydata package
+
+This setup script configures the installation of the phinitydata package,
+including all necessary dependencies and package data.
 """
 from setuptools import setup, find_packages
 
@@ -16,7 +19,19 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/phinitylabs/phinitydata.git",
-    packages=find_packages(include=['phinitydata', 'phinitydata.*']),
+    
+    # Explicitly include all packages and subpackages
+    packages=find_packages(where=".", exclude=["tests*", "examples*"]),
+    
+    # Include package data
+    include_package_data=True,
+    package_data={
+        "phinitydata": ["*.py", "**/*.py"],
+    },
+    
+    # Ensure the package is zip_safe
+    zip_safe=False,
+    
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
